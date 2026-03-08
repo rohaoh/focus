@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/rounded_dialog_bg">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="할 일 추가"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_todo_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="할 일 내용을 입력하세요"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:layout_marginBottom="12dp"/>
+    <CheckBox
+        android:id="@+id/checkbox_use_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이 작업에 집중 모드 사용"
+        android:layout_marginBottom="12dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/button_set_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간 설정"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/button_set_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="반복 안 함"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/button_delete"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/button_add"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추가"
+            android:textColor="@color/purple_500"/>
+    </LinearLayout>
+</LinearLayout>
